@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  padding: 20px;
+  background-color: #282b2e;
+  color: #fff9f7;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff9f7;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #7db3cb;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #7db3cb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 120px;
+}
+
+header ul {
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  header > nav > ul {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+#hero > img {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+#top_movies > ul,
+#coming_soon > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+#top_movies img,
+#coming_soon img {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  padding: 5px;
+  background-color: white;
+}
+
+#top_movies h2,
+#coming_soon h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+}
