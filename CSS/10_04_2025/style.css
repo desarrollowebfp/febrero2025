@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: none;
+  gap: 20px;
+}
+
+@media (min-width: 550px) {
+  nav > ul {
+    display: flex;
+  }
+
+  label {
+    display: none;
+  }
+}
+
+label {
+  font-size: 26px;
+}
+
+input {
+  display: none;
+}
+
+input[type="checkbox"]:checked + ul {
+  display: flex;
+}
+
+@media (max-width: 550px) {
+  nav > ul {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
