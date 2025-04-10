@@ -1,0 +1,28 @@
+/* *{
+
+}
+
+body{
+
+}
+
+.parrafo{
+
+}
+
+#id{
+
+} */
+
+a[href="http://google.com"]
+{
+  color: red;
+}
+
+header li {
+  color: orange;
+}
+
+footer li {
+  color: green;
+}
