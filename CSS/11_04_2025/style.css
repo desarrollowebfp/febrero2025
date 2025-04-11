@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+label {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+  label {
+    display: block;
+  }
+  input[type="checkbox"]:checked + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* OTRA VERSION */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  flex-wrap: wrap;
+}
