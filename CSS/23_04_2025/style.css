@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  height: 90vh;
+  width: 50vw;
+  border: 2px solid #ff0000;
+}
+
+.box {
+  background-color: blue;
+  width: 90%;
+  height: 50%;
+}
+
+span {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1em;
+  color: green;
+  background-color: hsl(178, 41%, 27%);
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h2{
+    font-family: "Winky Rough", sans-serif;
+}
