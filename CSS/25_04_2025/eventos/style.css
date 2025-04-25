@@ -1,0 +1,51 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 20px;
+  text-align: center;
+}
+
+#progress {
+  background-color: crimson;
+  height: 10px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  animation: scrollbar auto linear;
+  transform-origin: 0;
+  animation-timeline: scroll();
+  z-index: 1;
+}
+
+@keyframes scrollbar {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+p {
+  animation: reveal linear;
+  animation-timeline: view();
+  animation-range: entry 0% entry 90%;
+  padding: 20px;
+  background-color: grey;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
