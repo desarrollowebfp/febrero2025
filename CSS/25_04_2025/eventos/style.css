@@ -49,3 +49,21 @@ p {
     opacity: 1;
   }
 }
+
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation: background 10s linear;
+}
+
+@keyframes background {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(0.01);
+    opacity: 0;
+  }
+}
