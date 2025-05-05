@@ -1,0 +1,42 @@
+/* :root {
+  --primary-color: #1f1f1f;
+  --secondary-color: #e5e5e5;
+  --highlight-color: #f3a006;
+  --error-color: #e2113b;
+  --spacing: 20px;
+  --primary-font: "Arial", sans-serif;
+}
+
+body {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  font-family: var(--primary-font);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--highlight-color);
+  padding: var(--spacing);
+} */
+
+body {
+  display: flex;
+  flex-direction: row;
+  min-height: 400px;
+  border: 2px solid red;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  border: 2px solid black;
+  color: white;
+}
