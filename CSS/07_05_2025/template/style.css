@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 150px 1fr 150px;
+  grid-template-areas: 
+  "my-header my-header my-header"
+  "my-section my-main my-aside"
+  "my-footer my-footer my-footer"
+  ;
+}
+
+header {
+  grid-area: my-header;
+  background-color: orange;
+}
+
+section {
+  grid-area: my-section;
+  background-color: red;
+}
+
+main {
+  grid-area: my-main;
+  background-color: green;
+}
+
+aside {
+  grid-area: my-aside;
+  background-color: blue;
+}
+
+footer {
+  grid-area: my-footer;
+  background-color: yellow;
+}
