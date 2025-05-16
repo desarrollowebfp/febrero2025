@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Empanadas La Callejera</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #fffbe6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: #ff7f50;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1613145992196-83f0b26ec2bc?fit=crop&w=1200&q=80') no-repeat center center;
+      background-size: cover;
+      height: 60vh;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .menu-card {
+      transition: transform 0.2s ease-in-out;
+    }
+    .menu-card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #ff7f50;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Empanadas La Callejera</a>
+  </div>
+</nav>
+
+<header class="text-center">
+  <h1 class="display-4">¡Empanadas con Sabor Callejero!</h1>
+  <p class="lead">Recetas caseras, frescas y llenas de sabor</p>
+</header>
+
+<section class="container py-5">
+  <h2 class="text-center mb-4">Nuestro Menú</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card menu-card">
+        <img src="https://images.unsplash.com/photo-1606935736596-c5e8a7d5e5a4?fit=crop&w=600&q=80" class="card-img-top" alt="Empanada de carne">
+        <div class="card-body">
+          <h5 class="card-title">Empanada de Carne</h5>
+          <p class="card-text">Clásica y jugosa, con carne mechada y especias.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card menu-card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?fit=crop&w=600&q=80" class="card-img-top" alt="Empanada de queso">
+        <div class="card-body">
+          <h5 class="card-title">Empanada de Queso</h5>
+          <p class="card-text">Derretido y dorado queso dentro de una masa crujiente.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card menu-card">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?fit=crop&w=600&q=80" class="card-img-top" alt="Empanada vegana">
+        <div class="card-body">
+          <h5 class="card-title">Empanada Vegana</h5>
+          <p class="card-text">Rellena de vegetales asados y sabor natural.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">¿Dónde Estamos?</h2>
+    <p class="text-center">Nos encuentras todos los días en la esquina de Calle Sabrosa con Avenida del Buen Comer, de 12:00 a 21:00 hrs.</p>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="text-center mb-4">Contáctanos</h2>
+  <form class="mx-auto" style="max-width: 500px;">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+    </div>
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" rows="4" placeholder="Escríbenos algo..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Empanadas La Callejera - Todos los derechos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
