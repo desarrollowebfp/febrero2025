@@ -38,6 +38,7 @@ header {
   width: 100%;
   background-color: var(--bg-color);
   animation: fadeIn 4s;
+  z-index: 2;
 }
 
 @keyframes fadeIn {
@@ -51,7 +52,7 @@ header {
 }
 
 header img {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
@@ -104,8 +105,60 @@ header span {
 }
 
 .banner h1 {
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 200;
   padding: var(--spacing);
   text-align: center;
+}
+
+.shop ul {
+  padding: var(--spacing);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing);
+  justify-content: center;
+  align-items: center;
+}
+
+.shop li {
+  height: 340px;
+  width: 340px;
+  text-align: center;
+  position: relative;
+}
+
+.shop img {
+  width: 240px;
+  height: auto;
+  transition: 1s;
+}
+
+.shop img:hover {
+  transform: scale(1.2);
+}
+
+.soldout {
+  border: 2px solid var(--primary-color);
+  padding: 10px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: rgba(128, 128, 128, 0.506);
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  z-index: 2;
+}
+
+footer {
+  overflow: hidden;
+}
+
+footer video {
+  width: 110%;
+  height: auto;
 }
