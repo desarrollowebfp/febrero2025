@@ -1,0 +1,6 @@
+span{
+  -webkit-mask: url("./icons8-github.svg") no-repeat fixed 20px 20px padding padding;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
