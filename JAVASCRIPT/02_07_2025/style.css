@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+body {
+  background-color: rgb(37, 36, 36);
+  color: rgb(226, 226, 226);
+  padding: 20px;
+  text-align: center;
+}
+
+#vg-container {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+#vg-container img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+footer {
+  padding: 20px;
+}
