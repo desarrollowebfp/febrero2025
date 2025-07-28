@@ -1,0 +1,19 @@
+main {
+  border: 1px dashed rgb(47, 47, 47);
+  padding: 20px;
+}
+
+main > #mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-content: center;
+}
+
+main > #mainContainer > li {
+  padding: 20px;
+  border: 1px dashed rgb(47, 47, 47);
+  min-width: 200px;
+  text-align: center;
+}
