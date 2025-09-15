@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 20px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+body.dark {
+  background-color: black;
+  color: whitesmoke;
+}
+
+#themeBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+#themeBtn:hover {
+  transform: scale(1.25);
+}
