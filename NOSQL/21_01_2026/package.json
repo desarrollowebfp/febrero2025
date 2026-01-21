@@ -1,0 +1,18 @@
+{
+  "name": "21_01_2026",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "dev_alt": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales Martínez (http://lethamburn.vercel.app/)",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
