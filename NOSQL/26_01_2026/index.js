@@ -6,24 +6,18 @@ const server = express();
 //Creamos un router
 const miPrimerRouter = express.Router();
 //Definimos las rutas de mi primer router
-miPrimerRouter.get("/", (req, res) => {
-  res.send("Esta es mi ruta principal");
-});
+miPrimerRouter.get("/", responderRutaPrincipañ);
 
-miPrimerRouter.get("/status", (req, res) => {
-  res.send({
-    ok: true,
-    message: "Esta ruta está funcionando",
-    timestamp: new Date().toISOString(),
-  });
-});
+miPrimerRouter.get("/status", responderStatus);
 
-miPrimerRouter.get("/dice", (req, res) => {
+const lanzarDado =  (req, res) => {
   const roll = Math.floor(Math.random() * 6) + 1;
   res.send({
     resultado: roll
   });
-});
+}
+
+miPrimerRouter.get("/dice", lanzarDado);
 
 //Conectamos el router y le damos un endpoint "padre"
 server.use("/", miPrimerRouter)
